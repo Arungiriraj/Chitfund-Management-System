@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>joinscheme</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            div ~ p{
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+                color: darkred;
+            }
+            .demo2{
+                width: 100%;
+                background-color: rgb(102, 31, 31);
+                height: 50px;
+            }
+            .header1 li,a{
+                text-decoration: none;
+                list-style: none;
+                color:white;
+            }
+            .header1 nav{
+                width: 50%;
+                margin: 0 auto;
+                padding-top: 15px;
+            }
+            .demo3 li{
+                display: inline;
+                margin-left: 35px;
+            }
+            .demo3 a{
+                color: white;
+                font-size: 15px;
+            }
+            .header2{
+                width: 80%;
+                margin: 0 auto;
+                height: 500px;
+            }
+            .header2 img{
+                width: 100%;
+                height: 500px;
+            }
+            .join p{
+                font-size: 15px;
+                color:rgb(102, 31, 31);
+                margin-left: 15px;
+                text-align: justify;
+                margin-right: 15px;
+            }
+            .join h2{
+                text-align: center;
+                color:rgb(102, 31, 31) ;
+            }
+            .rr{
+                margin-left: 15px;
+            }
+            .rr button{
+                float: right;
+                margin-right: 75px;
+                height: 35px;
+                width: 100px;
+                background-color: rgb(102, 31, 31);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <p><b><i>AK Gold funds</i></b></p>
+        <br>
+        <div class="join"> 
+            <h2><i>Terms and Conditions</i></h2>
+            <br>
+            <p>
+                1. This is a advance jewellery BOOKING plan. NO REFUND of money is allowed under any circumstances under the plan. <br>
+        
+                2. The plan is unique and will not be linked to any other existing or future plans / offers and is not transferable under any circumstance.<br>
+
+                3. The money paid as advance under this plan shall not bear any interest.<br>
+                
+                4. Minimum booking amount is Rs.10,000/-. There is no CEILING for the maximum amount and a copy of PAN is to be furnished for amount exceeding Rs.2,00,000/-. All Online payments allowed above Rs.2 Lac except of cash payments. Cash payments shall not be allowed above Rs.1,80,000.<br>
+                
+                5. In this plan, MINOR CANNOT BECOME AN APPLICANT/MEMBER.<br>
+                
+                6. At the time of joining in the Jewellery Purchase Plan, the member may appoint a NOMINEE by furnishing KYC of both self and nominee. For Online Enrolled Member KYC and selfie photo of both attachment is mandatory.<br>
+                
+                7. Payment of monthly instalments can be made through all online payment mode i.e., Debit/Credit Card, UPI /QR, Net Banking, Wallet, Pay Later. EMI card not allowed. bond for payment made can be obtained or sent via courier.<br>
+                
+                8. Offline customers payments can be made through Cash, Credit / Debit Card, local cheques it shall be drawn in favour of “Lalithaa Jewellery Mart Private Ltd”. In case of dishonor of cheques, actual bank charges (Rs.200 to Rs.500 as the case maybe) shall be borne by the member. Member should ensure to collect receipt voucher / original membership bond while making payment directly at the respective branch.<br>
+                
+                9. The amount you pay is credited in 22 karat grams of gold as per the gold rate prevailing on the date of payment.<br>
+                
+                10. The time period for taking delivery of jewellery / purchase shall not exceed 365 days from the commencement date of the plan.<br>
+                
+                11. Members have the option to purchase gold coins also.<br>
+                
+                12. In case of balance money if any, left out in the plan account after adjusting the purchase price, various items shall be made available such as gold coins, silver coins, gift items and likewise for the members to purchase. Balance money will not be refunded.<br>
+                
+                13. Applicable Stone Charges will be collected from the members for ornaments with ruby, emerald, zircon, diamond, special stones, etc. Very few, special items such as oddiyanam, nagaz, kumkumchimizh, thirumangalyam, etc shall attract extra charges.<br>
+                
+                14. The person, who has enrolled in online application form, should sign on the invoice and prebooking bond at the time of purchase of jewellery. Produce ID & Address proof and bank passbook at the time of joining and redemption. Online Enrolled member if not come for jewellery purchase, the nominee ID and address proof shall be furnished along with declaration letter duly signed by the original enrolled member of respective scheme.<br>
+                
+                15. In case the member does not take delivery of the jewellery within 365 days from the enrolment date, sale invoice will be raised in the name of the member towards sale of jewellery, applicable GST on sale value will be paid to the Government and the ornaments weight due to the member will be held as “stock in custody” by the company till the member takes delivery of the ornament. This will be displayed in customer ledger in online app under the option Closed Scheme. The member can see their ledger and dues at any time and any where in mobile app and website under Lalithaa Jewellery Online Scheme. The offline member will be communicated/informed by the company in this regard by email / hard copy.<br>
+            </p>
+        </div>
+        <br>
+        <div class="rr">
+            <H1>HELLO</H1>
+            <label>
+                <input type="checkbox" id="termsCheckbox"> I accept the terms and conditions
+            </label>
+            <button id="registerButton" disabled>Join Now</button>
+        </div>
+        <!-- joinscheme.html -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+        
+                const termsCheckbox = document.getElementById('termsCheckbox');
+                const registerButton = document.getElementById('registerButton');
+                
+                termsCheckbox.addEventListener('change', function () {
+                    registerButton.disabled = !termsCheckbox.checked;
+                });
+        
+                registerButton.addEventListener('click', function () {
+                    if (!registerButton.disabled) {
+                        // Pass the modal title to schemeregistration.html
+                        var newPageURL = "schemeregistration.html";
+                        window.location.href = newPageURL;
+                    }
+                });
+            });
+        </script>
+        
+
+    </body>
+</html>

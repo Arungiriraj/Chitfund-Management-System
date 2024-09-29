@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scheme Registration</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            div ~ p{
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+                color: darkred;
+            }
+            .part1{
+                background-color:rgb(102, 31, 31);
+                width: 100%;
+                height: 70px;
+            }
+            .header{
+                padding: 10px;
+                background-color: rgb(102, 31, 31);
+                width: 80%;
+                height: 50px;
+                margin: 0 auto;
+            }
+            .header div{
+                display:inline;
+            }
+            .header input{
+                margin-left:40px;
+                margin-top:5px;
+                width:800px;
+                height:35px;
+                border-radius: 5px;
+            }
+            .demo a{
+                text-decoration: none;
+                color:black;
+            }
+            .demo button{
+                height:35px;
+                width:90px;
+                border-radius: 5px;
+                margin-top:5px;
+                color: white;
+            }
+
+            .demo1 li{
+                display: inline;
+                float:right;
+                margin-top: 10px;
+                margin-right: 30px;
+                color: white;
+            }
+            .demo1 li,a{
+                text-decoration: none;
+                list-style: none;
+                color:white;
+            }
+            .demo1 li{
+                font-size: 18px;
+            }
+            .demo2{
+                width: 100%;
+                background-color: rgb(102, 31, 31);
+                height: 50px;
+            }
+            .header1 li,a{
+                text-decoration: none;
+                list-style: none;
+                color:white;
+            }
+            .header1 nav{
+                width: 50%;
+                margin: 0 auto;
+                padding-top: 15px;
+            }
+            .demo3 li{
+                display: inline;
+                margin-left: 35px;
+            }
+            .demo3 a{
+                color: white;
+                font-size: 15px;
+            }
+            .header2{
+                width: 80%;
+                margin: 0 auto;
+                height: 500px;
+            }
+            .header2 img{
+                width: 100%;
+                height: 500px;
+            }
+            .sec1{
+                height: 50px;
+                width: 100%;
+                background-color: rgb(102, 31, 31);
+            }
+            .sec1 p{
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                padding-top: 10px;
+            }
+            .register1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                background-color: whitesmoke;
+                width: 100%;
+                height: 800px;
+            }
+            .done{
+                width:500px;
+                height: 700px;
+                border-radius: 30px;
+                background-color:rgb(102, 31, 31);
+            }
+            #b1{
+                height:45px;
+                width: 80%;
+                margin: 0 auto;
+                font-size: 18px;
+                background-color: #F8F8F8;
+                border-style: none;
+                border: 1px solid grey;
+                margin-left: 50px;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+            #b4{
+                height: 44px;
+                margin-left: 150px;
+                width: 40%;
+                font-size: 18px;
+                color: white;
+                background-color: #159AFF;
+                border-radius: 3px;
+                border-style: none;
+            }
+            #b5{
+                height:75px;
+                width: 80%;
+                margin: 0 auto;
+                font-size: 18px;
+                background-color: #F8F8F8;
+                border-style: none;
+                border: 1px solid grey;
+                margin-left: 50px;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+            .done label{
+                color:white;
+                margin-left: 50px;
+                font-size: 20px;
+            }
+            .done1{
+                width: 100%;
+                height: 40px;
+                background-color: rgb(102, 31, 31);
+            }
+            .done1 p{
+                font-family: cursive;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding-top: 5px;
+            }
+        </style>
+    </head>  
+    <body>
+        <div></div>
+        <p><b><i>AK Gold funds</i></b></p>
+            <div class="header1">
+                <div class="demo2">
+                    <nav>
+                        <ul class="demo3">
+                            <li><a href="firstpage.html" target="_blank"><b><i>HOME</i></b></a></li>
+                            <li><a href="quickpay.html" target="_blank"><b><i>QUICK PAY</i></b></a></li>
+                            <li><a href="schemepage.php" target="_blank"><b><i>SAVING SCHEME</i></b></a></li>
+                            <li><a href="contact.html" target="_blank"><b><i>CONTACT US</i></b></a></li>
+                            <li><a href="aboutus.html" target="_blank"><b><i>ABOUT US</i></b></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <div class="saveimg1">
+            <div class="register1">
+                 <div class="done">
+                     <form action="personaldetails.php" method="POST">
+                         <br>
+                         <input type="hidden" id="modalTitleInput" name="modal_title" value="">
+                         
+                         <label for="first_name">First Name</label><br>
+                         <input type="text" id="b1" name="first_name" required><br>
+
+                         <label for="last_name">Last Name</label><br>
+                         <input type="text" id="b1"name="last_name" required><br>
+
+                         <label for="mobile_number">Mobile Number</label><br>
+                         <input type="text" id="b1"name="mobile_number" required pattern="[0-9]{10}"><br>
+
+                         <label for="nominee_name">Nominee Name</label><br>
+                         <input type="text" id="b1"name="nominee_name" required><br>
+
+                         <label for="nominee_relationship">Nominee Relationship</label><br>
+                         <input type="text" id="b1" name="nominee_relationship" required><br>
+
+                         <label for="address">Permanent Address</label><br>
+                         <input type="textarea" id="b5" name="address" required>
+                         <br>
+                        <label for="acc_name">Account Holder Name</label>
+                        <input type="text" id="b1" name="acc_name" required>
+
+                        <label for="bank_name">Bank Name</label><br>
+                        <input type="text" id="b1" name="bank_name" required><br>
+
+                        <label for="acc_number">Account Number</label><br>
+                        <input type="text" id="b1" name="acc_number" required pattern="[0-9]{10}"><br>
+
+                        <label for="branch">Branch</label><br>
+                        <input type="text" id="b1" name="branch" required><br>
+
+                        <label for="ifcs">IFSC Code</label><br>
+                        <input type="text" id="b1" name="ifsc" required><br><br>
+
+                        <input type="submit" value="Register" id="b4">
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>
